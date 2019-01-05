@@ -1,0 +1,12 @@
+:kind            | :path         | :return      | :root        | :sig                                                                                                                                         
+---------------- | ------------- | ------------ | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------
+method           | /org/a11y/bus | QDBusVariant | org.a11y.Bus | org.freedesktop.DBus.Properties.Get(QString interface_name, QString property_name)                                                           
+method           | /org/a11y/bus | QString      | org.a11y.Bus | org.a11y.Bus.GetAddress()                                                                                                                    
+method           | /org/a11y/bus | QString      | org.a11y.Bus | org.freedesktop.DBus.Introspectable.Introspect()                                                                                             
+method           | /org/a11y/bus | QString      | org.a11y.Bus | org.freedesktop.DBus.Peer.GetMachineId()                                                                                                     
+method           | /org/a11y/bus | QVariantMap  | org.a11y.Bus | org.freedesktop.DBus.Properties.GetAll(QString interface_name)                                                                               
+method           | /org/a11y/bus | void         | org.a11y.Bus | org.freedesktop.DBus.Peer.Ping()                                                                                                             
+method           | /org/a11y/bus | void         | org.a11y.Bus | org.freedesktop.DBus.Properties.Set(QString interface_name, QString property_name, QDBusVariant value)                                       
+prop (readwrite) | /org/a11y/bus | bool         | org.a11y.Bus | org.a11y.Status.IsEnabled                                                                                                                    
+prop (readwrite) | /org/a11y/bus | bool         | org.a11y.Bus | org.a11y.Status.ScreenReaderEnabled                                                                                                          
+signal           | /org/a11y/bus | void         | org.a11y.Bus | org.freedesktop.DBus.Properties.PropertiesChanged(QString interface_name, QVariantMap changed_properties, QStringList invalidated_properties)
